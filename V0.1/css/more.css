@@ -1,0 +1,96 @@
+.about {
+    padding: 180px 0;
+}
+.about__container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about__body{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: flex-start;
+}
+
+.about__img {
+    flex: 1 1 58%;
+}
+.about__header {
+}
+
+.subtitle{
+font-size: 16px;
+font-weight: 700;
+line-height: 1.5; /* 24/16 */
+text-transform: uppercase;
+letter-spacing: 1px;
+text-align: left;
+
+}
+
+.about__subtitle {
+    margin-bottom: 8px;
+
+}
+
+.title{
+font-size: 46px;
+font-weight: 900;
+line-height: 1.3;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.about__title {
+    
+}
+.about__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    line-height: 1.57;
+    max-width: 390px;
+}
+.about-list {
+}
+
+.about-list__item{
+    position: relative;
+    min-height: 16px;
+}
+
+.about-list__item::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/galochka.svg);
+    position: absolute;
+    left: -32px;
+    top: 5px;
+    animation: rotate-icon 0.5s ease 1s infinite alternate;
+
+}
+
+@keyframes rotate-icon{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.about-list__item:hover:before{
+    animation: none;
+}
+
+.about__more {
+}
+.button {
+}
+.button_back {
+}
